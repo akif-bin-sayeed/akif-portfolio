@@ -1,0 +1,295 @@
+{
+  "personal": {
+    "name": "Akif Bin Sayeed",
+    "headline": "Agricultural Economics | GIS & Remote Sensing | Youth Leadership",
+    "shortIntro": "A multidisciplinary young professional working across agricultural economics, agribusiness research, GIS & remote sensing, sustainability, entrepreneurship development, and national-level youth initiatives.",
+    "location": "Gazipur, Bangladesh",
+    "email": "",
+    "phone": "",
+    "profileImage": "",
+    "resumeFile": "",
+    "socialLinks": [
+      { "label": "LinkedIn", "url": "#" },
+      { "label": "ResearchGate", "url": "#" },
+      { "label": "Google Scholar", "url": "#" },
+      { "label": "Facebook", "url": "#" }
+    ],
+    "heroTags": ["Agribusiness Research", "Spatial Data", "Sustainability", "Startup Mentorship"],
+    "availability": "Open to research collaboration, PhD opportunities, consulting, and innovation programs"
+  },
+  "stats": [
+    { "value": "2000+", "label": "Survey responses supervised" },
+    { "value": "60+", "label": "Universities coordinated" },
+    { "value": "500+", "label": "Trees planted through campaigns" },
+    { "value": "25-30", "label": "Weekly hours mentoring innovators" }
+  ],
+  "about": {
+    "title": "Research-driven, field-tested, and community-focused",
+    "paragraphs": [
+      "I combine agricultural economics, field-based socioeconomic research, GIS and remote sensing, and youth leadership to support practical solutions for sustainable agriculture and rural development.",
+      "My experience includes research assistance in GIS and remote sensing laboratories, sustainable aviation fuel feedstock feasibility studies, aquaculture supply-chain research, farm profitability analysis, consumer preference studies, and large-scale survey operations.",
+      "Alongside research, I have led and coordinated national-level entrepreneurship and youth programs, mentoring students, managing teams, and building active innovation communities."
+    ],
+    "focusAreas": [
+      "Agricultural Economics and Agribusiness",
+      "GIS, Remote Sensing, UAV and Satellite Data",
+      "Sustainability, Climate Action and Agroforestry",
+      "Survey Design, Data Collection and Analysis",
+      "Youth Leadership and Entrepreneurship Development"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Master of Science (MS) in Agroforestry and Environment",
+      "institution": "Bangladesh Agricultural University / Gazipur Agricultural University (GAU)",
+      "period": "Ongoing",
+      "details": ["GIS & Remote Sensing", "Environmental Sustainability", "Climate-Smart Agriculture", "Agroforestry Systems", "Spatial Data Analysis"]
+    },
+    {
+      "degree": "Bachelor of Science (BS) in Agricultural Economics",
+      "institution": "Bangabandhu Sheikh Mujibur Rahman Agricultural University (BSMRAU), Gazipur",
+      "period": "Completed: 2025",
+      "details": ["CGPA: Approximately 2.86", "Agricultural Economics", "Agribusiness Management", "Agricultural Finance", "Rural Development", "Statistics and Data Analysis"]
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC)",
+      "institution": "Government Ananda Mohan College",
+      "period": "2019",
+      "details": ["GPA: 5.00"]
+    },
+    {
+      "degree": "Secondary School Certificate (SSC)",
+      "institution": "Mymensingh Zilla School",
+      "period": "2017",
+      "details": ["GPA: 5.00"]
+    }
+  ],
+  "experiences": [
+    {
+      "category": "Research",
+      "title": "Research Assistant",
+      "organization": "GIS & Remote Sensing Laboratory, Gazipur Agricultural University (GAU)",
+      "period": "2025 - Present",
+      "location": "Gazipur, Bangladesh",
+      "summary": "Supporting GIS and remote sensing-based agricultural and environmental research using spatial datasets, drone imagery, multispectral imagery, and satellite data.",
+      "highlights": [
+        "Assisting with crop monitoring and precision agriculture field experiments.",
+        "Supporting data management, preprocessing, and interpretation of remotely sensed data.",
+        "Working with RGB, RedEdge, infrared and satellite imagery for agricultural analysis."
+      ],
+      "tags": ["ArcGIS", "Google Earth Engine", "Drone Data", "Pix4D", "Spatial Analysis"]
+    },
+    {
+      "category": "Research",
+      "title": "Research Assistant",
+      "organization": "Feasibility Study on Feedstock Oil Crop Cultivation for Sustainable Aviation Fuel",
+      "period": "July 2025",
+      "location": "Khagrachhari, Rangamati, Baghaichhari, Lama, Rowangchhari",
+      "summary": "Sponsored by Euglena Co., Ltd., Japan, this field study assessed the feasibility of feedstock oil crop production for SAF supply-chain development in Bangladesh.",
+      "highlights": [
+        "Conducted field surveys among indigenous and tribal communities in the Chittagong Hill Tracts.",
+        "Collected socioeconomic, land-use, water availability and environmental data from more than 200 respondents.",
+        "Supported sustainability and greenhouse-gas-related data analysis."
+      ],
+      "tags": ["SAF", "Survey", "Sustainability", "GHG", "Field Research"]
+    },
+    {
+      "category": "Research",
+      "title": "Research Assistant",
+      "organization": "Coffee Consumer Preference and Origin Perception Study, Department of Agribusiness",
+      "period": "2025",
+      "location": "Bandarban, Bangladesh",
+      "summary": "Worked on farm-level and consumer-level research connecting tribal coffee farmers, urban consumers, origin perception and agribusiness economics.",
+      "highlights": [
+        "Collected data from more than 80 tribal coffee farmers and more than 200 urban consumers.",
+        "Assisted questionnaire development and refinement.",
+        "Integrated farm-level economic analysis including variable cost and BCR estimation."
+      ],
+      "tags": ["Consumer Behavior", "BCR", "Coffee", "Agribusiness", "Rural Entrepreneurship"]
+    },
+    {
+      "category": "Research",
+      "title": "Data Enumerator & Data Analyst",
+      "organization": "Carp Biosecurity and Aquaculture Supply Chain Project",
+      "period": "January 2025",
+      "location": "Mymensingh, Jashore, Khulna, Cumilla, Chattogram",
+      "summary": "Funded by USAID Feed the Future, Texas State University, Mississippi State University and Bangladesh Agricultural University.",
+      "highlights": [
+        "Interviewed hatchery owners, fish farmers and supply-chain actors across Bangladesh.",
+        "Supported biosecurity-related research in aquaculture systems.",
+        "Participated in data cleaning, organization and preliminary statistical analysis."
+      ],
+      "tags": ["Aquaculture", "Biosecurity", "Supply Chain", "R", "SPSS"]
+    },
+    {
+      "category": "Research",
+      "title": "Research Intern",
+      "organization": "Bangladesh Institute of Nuclear Agriculture (BINA)",
+      "period": "December 2024 - March 2025",
+      "location": "Bangladesh",
+      "summary": "Project: Financial Profitability Analysis of Binadhan-16 at Farm Level.",
+      "highlights": [
+        "Evaluated profitability indicators including cost, return and net benefit.",
+        "Collected farmer-level production and management data.",
+        "Prepared analytical reports and findings."
+      ],
+      "tags": ["Profitability", "Farm Economics", "Survey", "Agricultural Reporting"]
+    },
+    {
+      "category": "Research",
+      "title": "Field Interviewer → Supervisor → Recruiter & Data Collection Trainer",
+      "organization": "Crystal Research & Consultancy",
+      "period": "August 2024 - October 2024",
+      "location": "Bangladesh",
+      "summary": "Progressed from field interviewer to supervisory and recruitment responsibilities based on performance in market research operations.",
+      "highlights": [
+        "Supervised survey teams across multiple districts.",
+        "Collected and monitored over 2,000 survey responses.",
+        "Recruited and trained data collectors while ensuring survey quality control."
+      ],
+      "tags": ["Team Management", "QA", "Survey Operations", "Training"]
+    },
+    {
+      "category": "Leadership",
+      "title": "On-Campus Coordinator",
+      "organization": "Hult Prize Bangladesh National Team",
+      "period": "2024 - Present",
+      "location": "Bangladesh",
+      "summary": "Mentoring campus directors and coordinating national-level entrepreneurship and innovation activities across Bangladesh.",
+      "highlights": [
+        "Spending approximately 25-30 hours weekly supporting entrepreneurial ecosystems.",
+        "Guiding students in startup development, pitching and competition preparation.",
+        "Mentored winning and finalist teams from Bangladesh, India and Pakistan."
+      ],
+      "tags": ["Leadership", "Startup Mentorship", "Team Coordination", "Strategic Planning"]
+    },
+    {
+      "category": "Leadership",
+      "title": "Campus Director",
+      "organization": "Hult Prize at BSMRAU",
+      "period": "2024",
+      "location": "BSMRAU, Gazipur",
+      "summary": "Led campus-wide execution of Hult Prize programs, including recruitment, logistics, sponsorship communication and team management.",
+      "highlights": [
+        "Reached approximately 1,500 students through promotional campaigns.",
+        "Organized workshops, promotional activities and startup-focused events.",
+        "Built a large and active organizing team."
+      ],
+      "tags": ["Event Execution", "Student Engagement", "Sponsorship", "Innovation"]
+    },
+    {
+      "category": "Leadership",
+      "title": "Secretary General",
+      "organization": "Prothom Alo Bondhushava - GAU / BSMRAU Unit",
+      "period": "Recent",
+      "location": "Gazipur, Bangladesh",
+      "summary": "Led an active student volunteer organization organizing social awareness, cultural, mental health and youth development programs.",
+      "highlights": [
+        "Managed large-scale events with audiences ranging from hundreds to over a thousand participants.",
+        "Coordinated membership expansion and volunteer management.",
+        "Organized mental health awareness and youth engagement programs."
+      ],
+      "tags": ["Volunteer Management", "Public Relations", "Community Mobilization"]
+    },
+    {
+      "category": "Events",
+      "title": "Organizer",
+      "organization": "Hult Prize National Summit Bangladesh 2025, Chittagong University",
+      "period": "2025",
+      "location": "Chittagong University",
+      "summary": "Contributed to a national entrepreneurship summit with participation from more than 60 universities.",
+      "highlights": [
+        "Managed logistics, communication and stakeholder coordination.",
+        "Supported networking among students, mentors, judges and entrepreneurs."
+      ],
+      "tags": ["National Summit", "Logistics", "Stakeholders", "Entrepreneurship"]
+    },
+    {
+      "category": "Events",
+      "title": "Organizer",
+      "organization": "Career Compass: Mastering Corporate World & Personal Branding",
+      "period": "2025",
+      "location": "Bangladesh",
+      "summary": "Organized youth-focused career development sessions on corporate skills and personal branding.",
+      "highlights": ["Coordinated speakers, participants and promotional activities."],
+      "tags": ["Career Development", "Personal Branding", "Youth"]
+    },
+    {
+      "category": "Events",
+      "title": "Organizer",
+      "organization": "Master Class on Agribusiness Career & Entrepreneurship",
+      "period": "2026",
+      "location": "Bangladesh",
+      "summary": "Promoted agribusiness entrepreneurship and career awareness among students.",
+      "highlights": ["Managed speaker communication and event execution."],
+      "tags": ["Agribusiness", "Entrepreneurship", "Professional Development"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "GIS & Remote Sensing for Crop Monitoring",
+      "type": "Research Focus",
+      "description": "Integration of drone imagery, multispectral data, satellite imagery and spatial analysis for crop growth monitoring, precision agriculture and environmental assessment.",
+      "tools": ["ArcGIS", "Google Earth Engine", "Pix4D", "UAV Imagery"],
+      "link": "#"
+    },
+    {
+      "title": "Feedstock Oil Crop Cultivation for Sustainable Aviation Fuel",
+      "type": "Field Research",
+      "description": "Feasibility assessment of feedstock oil crops for sustainable aviation fuel production in Bangladesh using field surveys, land-use information and sustainability-related data.",
+      "tools": ["Survey Design", "Socioeconomic Data", "Sustainability Assessment"],
+      "link": "#"
+    },
+    {
+      "title": "Coffee Origin Perception and Consumer Preference",
+      "type": "Agribusiness Research",
+      "description": "A study involving tribal coffee farmers and urban consumers to understand coffee origin perception, purchasing behavior and farm-level profitability.",
+      "tools": ["Consumer Survey", "BCR", "Farm Economics"],
+      "link": "#"
+    },
+    {
+      "title": "Carp Biosecurity and Aquaculture Supply Chain",
+      "type": "Survey & Data Analysis",
+      "description": "Research support for aquaculture biosecurity and supply-chain analysis across multiple districts in Bangladesh.",
+      "tools": ["R", "SPSS", "Survey", "Supply Chain"],
+      "link": "#"
+    }
+  ],
+  "skills": [
+    {
+      "group": "Data Analysis & Statistical Tools",
+      "items": ["R Programming", "SPSS", "Microsoft Excel", "Google Sheets", "Data Cleaning", "Quantitative and Qualitative Survey Analysis"]
+    },
+    {
+      "group": "GIS & Remote Sensing",
+      "items": ["ArcGIS / ArcMap 10.8", "Google Earth Engine", "Drone Data Collection", "Pix4D", "Satellite Image Processing", "Spatial Data Analysis"]
+    },
+    {
+      "group": "Research & Field Skills",
+      "items": ["Survey Design", "Questionnaire Development", "Socioeconomic Research", "Agricultural Economic Analysis", "Consumer Behavior Analysis", "Rural Field Coordination", "Report Writing"]
+    },
+    {
+      "group": "Communication & Leadership",
+      "items": ["Public Speaking", "Event Management", "Team Leadership", "Stakeholder Communication", "Training & Mentoring", "Volunteer Coordination", "Organizational Development"]
+    }
+  ],
+  "achievements": [
+    "First Runner-Up and Regional Finalist (Kolkata) - Hult Prize OnCampus 2021",
+    "Champion - Hult Prize OnCampus 2022",
+    "Participant - Mumbai Impact Summit 2022",
+    "Chief of Staff - Hult Prize BSMRAU 2023",
+    "Campus Director - Hult Prize BSMRAU 2024",
+    "On-Campus Coordinator - Hult Prize Bangladesh National Team",
+    "Mentored and supported winning/finalist teams across South Asia"
+  ],
+  "gallery": [
+    { "title": "Add event photo", "image": "", "caption": "Use the admin panel to upload and caption a real photo." },
+    { "title": "Add field research photo", "image": "", "caption": "Add a strong fieldwork image from your research." },
+    { "title": "Add presentation photo", "image": "", "caption": "Add a photo from workshops, summits or academic presentations." }
+  ],
+  "contact": {
+    "title": "Let’s collaborate on sustainable agriculture, spatial research, and youth innovation.",
+    "message": "I am interested in research collaboration, PhD opportunities, GIS/RS projects, agribusiness studies, youth innovation programs and field-based data collection projects.",
+    "buttonLabel": "Send Message"
+  }
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Local JSON Editor | Portfolio</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;margin:0;background:#f7fbf4;color:#10251a}main{max-width:980px;margin:0 auto;padding:32px 18px}textarea{width:100%;min-height:65vh;border:1px solid #cfe2d6;border-radius:18px;padding:18px;font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}button,a{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:12px 18px;font-weight:800;background:#177a4e;color:#fff;text-decoration:none;cursor:pointer;margin:8px 8px 8px 0}.ghost{background:#e8f3ed;color:#10251a}.note{background:#fff;border:1px solid #dbe9df;border-radius:18px;padding:16px;margin:18px 0;color:#4d6659}</style>
+</head>
+<body>
+<main>
+  <h1>Local Portfolio Content Editor</h1>
+  <p class="note">This fallback editor loads <code>data/profile.json</code>, lets you edit it, then downloads a replacement JSON file. For direct online editing, use the main <a class="ghost" href="/admin/">Decap/Netlify admin panel</a>.</p>
+  <textarea id="editor" spellcheck="false"></textarea>
+  <div>
+    <button id="validate">Validate JSON</button>
+    <button id="download">Download Updated profile.json</button>
+    <a class="ghost" href="/">Back to site</a>
+  </div>
+  <p id="status" class="note">Loading...</p>
+</main>
+<script>
+const editor = document.getElementById('editor');
+const status = document.getElementById('status');
+fetch('../data/profile.json').then(r => r.json()).then(data => {
+  editor.value = JSON.stringify(data, null, 2);
+  status.textContent = 'Loaded successfully. Edit carefully, validate, then download.';
+}).catch(() => { status.textContent = 'Could not load the JSON. Open this through a local server or deployed site.'; });
+document.getElementById('validate').onclick = () => {
+  try { JSON.parse(editor.value); status.textContent = 'Valid JSON. You can download it now.'; }
+  catch (e) { status.textContent = 'JSON error: ' + e.message; }
+};
+document.getElementById('download').onclick = () => {
+  try {
+    const parsed = JSON.parse(editor.value);
+    const blob = new Blob([JSON.stringify(parsed, null, 2)], {type:'application/json'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'profile.json';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  } catch (e) { status.textContent = 'Fix JSON first: ' + e.message; }
+};
+</script>
+</body>
+</html>
