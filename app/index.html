@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#020712">
+  <title>Akif Portfolio App</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="app.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <section class="login-card" data-login>
+      <div class="app-brand"><span>ABS</span><div><h1>Portfolio App</h1><p>Private editor for website, gallery, certificates, posts, and messages.</p></div></div>
+      <form data-login-form>
+        <label>Email<input name="email" type="email" required placeholder="your@email.com"></label>
+        <label>Password<input name="password" type="password" required placeholder="Supabase password"></label>
+        <button class="button primary" type="submit">Log in</button>
+        <p class="note" data-login-note></p>
+      </form>
+    </section>
+
+    <section class="app" data-app hidden>
+      <aside class="sidebar">
+        <a class="app-brand compact" href="../"><span>ABS</span><div><strong>Portfolio App</strong><small>Mobile editor</small></div></a>
+        <nav data-tabs>
+          <button class="active" data-tab="profile">Profile</button>
+          <button data-tab="floating">Floating Labels</button>
+          <button data-tab="content">Full Content</button>
+          <button data-tab="gallery">Gallery</button>
+          <button data-tab="certificates">Certificates</button>
+          <button data-tab="posts">Posts</button>
+          <button data-tab="messages">Messages</button>
+        </nav>
+        <button class="button ghost" data-seed>Seed starter content</button>
+        <button class="button ghost" data-logout>Log out</button>
+      </aside>
+
+      <section class="workspace">
+        <div class="topbar"><div><p class="micro">Private dashboard</p><h2 data-page-title>Profile</h2></div><a class="button soft" href="../" target="_blank">View site</a></div>
+        <div class="status" data-status>Ready.</div>
+
+        <section class="panel tab active" data-panel="profile">
+          <h3>Profile and homepage</h3>
+          <form class="grid-form" data-profile-form>
+            <label>Name<input name="name"></label>
+            <label>Headline<input name="headline"></label>
+            <label>Availability<input name="availability"></label>
+            <label>Location<input name="location"></label>
+            <label>Email<input name="email"></label>
+            <label>Phone<input name="phone"></label>
+            <label class="full">Short intro<textarea name="shortIntro" rows="4"></textarea></label>
+            <label class="full">Hero tags, one per line<textarea name="heroTags" rows="4"></textarea></label>
+            <label class="full">About paragraphs, one per line<textarea name="aboutParagraphs" rows="6"></textarea></label>
+            <label>Upload profile/main photo<input name="profileFile" type="file" accept="image/*"></label>
+            <label>Profile photo URL<input name="profileImage" placeholder="Auto-filled after upload"></label>
+            <button class="button primary" type="submit">Save profile</button>
+          </form>
+        </section>
+
+        <section class="panel tab" data-panel="floating">
+          <h3>Hero floating labels</h3>
+          <p class="hint">These labels vanish and move away when you hover over the ABS/photo box. Edit text and position from phone or laptop.</p>
+          <div data-floating-list></div>
+          <div class="row"><button class="button ghost" data-add-floating>Add label</button><button class="button primary" data-save-floating>Save floating labels</button></div>
+        </section>
+
+        <section class="panel tab" data-panel="content">
+          <h3>Full website content</h3>
+          <p class="hint">Everything is editable here as JSON: education, experience, projects, skills, achievements, contact text, section titles, buttons, and more.</p>
+          <textarea class="json-editor" data-json rows="28"></textarea>
+          <div class="row"><button class="button primary" data-save-json>Save full content</button><button class="button ghost" data-download-json>Download backup JSON</button></div>
+        </section>
+
+        <section class="panel tab" data-panel="gallery">
+          <h3>Gallery</h3>
+          <p class="hint">Gallery photos keep their original ratio. The site will not force-crop them.</p>
+          <form class="grid-form" data-gallery-form>
+            <label>Title<input name="title"></label><label>Sort order<input name="sort_order" type="number" value="0"></label>
+            <label class="full">Caption<textarea name="caption" rows="3"></textarea></label>
+            <label>Upload image<input name="imageFile" type="file" accept="image/*"></label>
+            <label>Image URL<input name="image_url"></label>
+            <label><input class="inline-check" name="published" type="checkbox" checked> Published</label>
+            <button class="button primary" type="submit">Add gallery item</button>
+          </form>
+          <div class="list" data-gallery-list></div>
+        </section>
+
+        <section class="panel tab" data-panel="certificates">
+          <h3>Certificate Corner</h3>
+          <form class="grid-form" data-cert-form>
+            <label>Title<input name="title" required></label><label>Issuer<input name="issuer"></label><label>Year<input name="year"></label><label>Sort order<input name="sort_order" type="number" value="0"></label>
+            <label class="full">Description<textarea name="description" rows="3"></textarea></label>
+            <label>Upload image<input name="imageFile" type="file" accept="image/*"></label><label>Image URL<input name="image_url"></label>
+            <label><input class="inline-check" name="published" type="checkbox" checked> Published</label>
+            <button class="button primary" type="submit">Add certificate</button>
+          </form>
+          <div class="list" data-cert-list></div>
+        </section>
+
+        <section class="panel tab" data-panel="posts">
+          <h3>Posts / updates</h3>
+          <form class="grid-form" data-post-form>
+            <label class="full">Title<input name="title" required></label>
+            <label class="full">Body<textarea name="body" rows="5"></textarea></label>
+            <label>Upload image<input name="imageFile" type="file" accept="image/*"></label><label>Image URL<input name="image_url"></label>
+            <label><input class="inline-check" name="published" type="checkbox" checked> Published</label>
+            <button class="button primary" type="submit">Add post</button>
+          </form>
+          <div class="list" data-post-list></div>
+        </section>
+
+        <section class="panel tab" data-panel="messages">
+          <h3>Contact messages</h3>
+          <div class="list" data-message-list></div>
+        </section>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
