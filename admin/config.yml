@@ -1,0 +1,140 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: "/"
+display_url: "/"
+logo_url: "/assets/favicon.svg"
+
+collections:
+  - name: "site"
+    label: "Portfolio Website"
+    files:
+      - name: "profile"
+        label: "Main Portfolio Content"
+        file: "data/profile.json"
+        format: "json"
+        editor:
+          preview: false
+        fields:
+          - label: "Personal Information"
+            name: "personal"
+            widget: "object"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Short Intro", name: "shortIntro", widget: "text" }
+              - { label: "Location", name: "location", widget: "string", required: false }
+              - { label: "Email", name: "email", widget: "string", required: false }
+              - { label: "Phone", name: "phone", widget: "string", required: false }
+              - { label: "Profile Image", name: "profileImage", widget: "image", required: false }
+              - { label: "Resume File URL", name: "resumeFile", widget: "string", required: false }
+              - { label: "Availability / CTA Line", name: "availability", widget: "string", required: false }
+              - label: "Hero Tags"
+                name: "heroTags"
+                widget: "list"
+                field: { label: "Tag", name: "tag", widget: "string" }
+              - label: "Social Links"
+                name: "socialLinks"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string", required: false }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Value", name: "value", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
+              - label: "Focus Areas"
+                name: "focusAreas"
+                widget: "list"
+                field: { label: "Area", name: "area", widget: "string" }
+          - label: "Education"
+            name: "education"
+            widget: "list"
+            fields:
+              - { label: "Degree", name: "degree", widget: "string" }
+              - { label: "Institution", name: "institution", widget: "string" }
+              - { label: "Period", name: "period", widget: "string", required: false }
+              - label: "Details"
+                name: "details"
+                widget: "list"
+                required: false
+                field: { label: "Detail", name: "detail", widget: "string" }
+          - label: "Experience"
+            name: "experiences"
+            widget: "list"
+            summary: "{{fields.title}} - {{fields.organization}}"
+            fields:
+              - { label: "Category", name: "category", widget: "select", options: ["Research", "Leadership", "Events", "Community", "Other"] }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Organization", name: "organization", widget: "string" }
+              - { label: "Period", name: "period", widget: "string", required: false }
+              - { label: "Location", name: "location", widget: "string", required: false }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - label: "Highlights"
+                name: "highlights"
+                widget: "list"
+                field: { label: "Highlight", name: "highlight", widget: "text" }
+              - label: "Tags / Tools"
+                name: "tags"
+                widget: "list"
+                required: false
+                field: { label: "Tag", name: "tag", widget: "string" }
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Type", name: "type", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Link", name: "link", widget: "string", required: false }
+              - label: "Tools"
+                name: "tools"
+                widget: "list"
+                required: false
+                field: { label: "Tool", name: "tool", widget: "string" }
+          - label: "Skills"
+            name: "skills"
+            widget: "list"
+            summary: "{{fields.group}}"
+            fields:
+              - { label: "Group", name: "group", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                field: { label: "Skill", name: "skill", widget: "string" }
+          - label: "Achievements"
+            name: "achievements"
+            widget: "list"
+            field: { label: "Achievement", name: "achievement", widget: "string" }
+          - label: "Gallery"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Caption", name: "caption", widget: "text", required: false }
+          - label: "Contact Section"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Message", name: "message", widget: "text" }
+              - { label: "Button Label", name: "buttonLabel", widget: "string" }
