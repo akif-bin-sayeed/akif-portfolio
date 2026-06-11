@@ -289,16 +289,68 @@ function renderContact() {
 
 async function submitMessage(e) {
   e.preventDefault();
-  const fd = new FormData(e.currentTarget);
-  const notice = $('#formNotice');
-  const payload = { name: fd.get('name'), email: fd.get('email'), message: fd.get('message') };
-  try {
-    const { error } = await sb.from('messages').insert(payload);
-    if (error) throw error;
-    if (notice) { notice.textContent = 'Message sent successfully. Thank you.'; notice.className = 'notice show'; notice.style.display = 'block'; }
-    e.currentTarget.reset();
-  } catch (err) {
-    if (notice) { notice.textContent = 'Could not send message right now. Please email directly.'; notice.className = 'notice error show'; notice.style.display = 'block'; }
+
+  const form = e.currentTarget;
+  const fd = new FormData(form);
+  const notice = document.querySelector('#formNotice');
+  const button = form.querySelector('button[type="submit"]');
+
+  const payload = {
+    name: String(fd.get('name') || '').trim(),
+    email: String(fd.get('email') || '').trim(),
+    message: String(fd.get('message') || '').trim()
+  };
+
+  if (!payload.name || !payload.message) {
+    if (notice) {
+      notice.textContent = 'Please write your name and message.';
+      notice.className = 'notice error show';
+      notice.style.display = 'block';
+    }
+    return;
+  }
+
+  if (button) {
+    button.disabled = true;
+    button.textContent = 'Sending...';
+  }
+
+  if (notice) {
+    notice.textContent = 'Sending...';
+    notice.className = 'notice show';
+    notice.style.display = 'block';
+  }
+
+  const result = await sb.from('messages').insert([payload]);
+
+  if (result.error) {
+    console.error('Message insert error:', result.error);
+
+    if (notice) {
+      notice.textContent = 'Could not send message right now. Please email directly.';
+      notice.className = 'notice error show';
+      notice.style.display = 'block';
+    }
+
+    if (button) {
+      button.disabled = false;
+      button.textContent = 'Send message';
+    }
+
+    return;
+  }
+
+  if (notice) {
+    notice.textContent = 'Message sent successfully. Thank you.';
+    notice.className = 'notice success show';
+    notice.style.display = 'block';
+  }
+
+  form.reset();
+
+  if (button) {
+    button.disabled = false;
+    button.textContent = 'Send message';
   }
 }
 
